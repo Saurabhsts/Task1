@@ -1,0 +1,17 @@
+<div class="p-3" style="background-color: white;border-radius: 7px;">
+  <h3>Product Details</h3>
+  <div class="row">
+    <div class="col-lg-6 col-md-6">
+      <img src="{{product.image}}" alt="image" style="height: 300px;width: 300px;">
+    </div>
+    <div class="col-lg-6 col-md-6">
+      <p><b>Product Name:</b> {{product.name}} </p>
+      <p><b>Product Code:</b> {{product.code}} </p>
+      <p><b>Product HSNCode:</b> {{product.hsnCode}} </p>
+      <p><b>Product price:</b> {{product.price}} </p>
+      <p><b>Description : </b>{{product.description}} </p>
+    </div>
+  </div>
+  <hr>
+  <button class="btn btn-primary" routerLink="/home">Close</button>
+</div>

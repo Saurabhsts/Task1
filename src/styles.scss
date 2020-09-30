@@ -1,0 +1,24 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+body {
+  background-color: rgb(228, 229, 231);
+}
+
+.nav-bar {
+  background-color: brown;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0%;
+  z-index: 101;
+}
+
+.content{
+  height: auto;
+  width: 80%;
+  margin: auto;
+  padding: 5px;
+}
+

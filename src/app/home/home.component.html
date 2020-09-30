@@ -1,0 +1,21 @@
+<div class="w-100 d-flex justify-content-between">
+  <h2>Product List</h2>
+  <button class="btn btn-primary" (click)="addProduct()">Add Product</button>
+</div>
+<hr>
+<div *ngIf="!products" class="d-flex align-items-center justify-content-center w-100" style="height:400px">
+  <h1 class="text-danger">No Product Found</h1>
+</div>
+
+<div class="row">
+  <ng-container *ngFor="let product of products; index as i">
+    <div class="col-lg-3 col-md-3">
+      <div class="p-3 m-1 card">
+        <img src="{{product.image}}" alt="Image" class="image" (click)="onViewProduct(product)">
+        <span class="producr-name">Product Code : {{product.code}} </span>
+        <span class="producr-name">Product Name : {{product.name}} </span>
+        <button class="btn btn-danger" (click)="deleteProduct(i)" >Delete</button>
+      </div>
+    </div>
+  </ng-container>
+</div>
